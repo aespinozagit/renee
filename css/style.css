@@ -270,6 +270,11 @@ textarea.form-control {
 	overflow-x: hidden;
 }
 
+/* .background_img1 {
+	background-image: url('../images/background1.jpg');
+	overflow: hidden;
+} */
+
 .calltoaction h1,
 .calltoaction h2,
 .calltoaction h3,
@@ -443,10 +448,12 @@ textarea.form-control {
 
 .start {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 18px;
+	font-size: 22px;
 	font-style: normal;
 	text-transform: none;
 	margin: 15px 0;
+	font-weight: 500;
+	color: ;
 }
 
 /* ---------------------------------------------- /*
@@ -889,12 +896,13 @@ textarea.form-control {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
+
 /*-----------------*/
 /***** Apollo *****/
 /*-----------------*/
 
 figure.effect-apollo {
-	background: #3498db;
+	background: #000;
 }
 
 figure.effect-apollo img {
@@ -968,7 +976,7 @@ figure.effect-apollo:hover p {
 		width: 100%;
 	}
 	#tf-menu a.navbar-brand {
-    	font-size: 17px;
+    	font-size: 16px;
 	}
 }
 
