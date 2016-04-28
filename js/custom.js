@@ -1,19 +1,18 @@
 (function($){
 
-	/*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */ 
-  	$(window).load(function() {
+		$(document).ready(function() {
+		/*----------------------------------------------------*/
+		/* Chance backgroud to gif when on mobile
+		------------------------------------------------------*/
+	   	var width = $(window).width();{
+		   	if (width <= 769) {
+		   	$('<img src="images/cover.jpg" id="mobileCover">').appendTo('.background-wrap');		      
 
-   	// will first fade out the loading animation 
-    	$("#status").fadeOut("slow"); 
+		   } else {
+		      $('<video src="videos/video.mp4" id="video-bg-elem" autoplay loop muted></video>').appendTo('.background-wrap');
+		   }
 
-    	// will fade out the whole DIV that covers the website. 
-    	$("#preloader").delay(500).fadeOut("slow").remove();      
-
-  	})
-
-	$(document).ready(function() {
+		}
 
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
@@ -100,25 +99,6 @@
 	      }
 
 		});
-        
-        /* ---------------------------------------------- /*
-		 * Skills
-        /* ---------------------------------------------- */    
-        //var color = $('#home').css('backgroundColor');
-
-        $('.skills').waypoint(function(){
-            $('.chart').each(function(){
-            $(this).easyPieChart({
-                    size:140,
-                    animate: 2000,
-                    lineCap:'butt',
-                    scaleColor: false,
-                    barColor: '#92d050',
-                    trackColor: 'transparent',
-                    lineWidth: 10
-                });
-            });
-        },{offset:'80%'});
         
 		/* ---------------------------------------------- /*
 		 * Home BG
